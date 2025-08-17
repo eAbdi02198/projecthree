@@ -21,10 +21,7 @@ const routesi = [
     path: "/about",
     element: <About />,
   },
-  {
-    path: "/login",
-    element: <Login />,
-  },
+
   {
     path: "/article/*",
     element: <Article />,

@@ -26,7 +26,7 @@ export default function Home() {
             </p>
           </div>
           <div className="intro-image">
-            <img src="/images/software-engineer-writing-code-computer-coder-programming-database-programmer-typing-script-solves-problems-algorithm-digital-development-flat-isolated-vector-illustration-white_633472-6162.avif" alt="Intro" />
+            <img src="/images/55.avif" alt="Intro" />
           </div>
         </div>
       </div>
