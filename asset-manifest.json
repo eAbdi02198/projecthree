@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projecthree/static/css/main.97970cbf.css",
+    "main.js": "/projecthree/static/js/main.8e1b59f6.js",
+    "index.html": "/projecthree/index.html",
+    "main.97970cbf.css.map": "/projecthree/static/css/main.97970cbf.css.map",
+    "main.8e1b59f6.js.map": "/projecthree/static/js/main.8e1b59f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97970cbf.css",
+    "static/js/main.8e1b59f6.js"
+  ]
+}
