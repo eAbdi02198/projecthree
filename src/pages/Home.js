@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import axios from 'axios';
 import Card from '../components/Card';
+import aks1 from '../images/55.avif'
 
 export default function Home() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    axios.get("https://68a078926e38a02c5818cd15.mockapi.io/courseData")
+    axios.get("https://68a1e6ee6f8c17b8f5db0df3.mockapi.io/courseData")
       .then(res => setCourses(res.data))
       .catch(err => console.log(err));
   }, []);
@@ -21,12 +22,10 @@ export default function Home() {
             <h1>برنامه نویسی با من</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quam unde ducimus, consequuntur dolor maxime quisquam quia modi sunt, hic aliquam quibusdam sit esse ipsam impedit dignissimos quod praesentium recusandae.
-              Omnis magni perspiciatis eveniet recusandae quae molestiae nemo culpa dolore fugiat soluta, ratione explicabo commodi. Velit, possimus ipsam! Quo alias consequatur doloribus ut numquam dignissimos, qui maxime commodi consequuntur recusandae.
-              Voluptatibus fugit laborum, atque quos, alias necessitatibus rerum error earum libero saepe in sequi dolores aut, voluptatem blanditiis minima nisi unde aliquid numquam quod. Tempora voluptatum cum voluptates nesciunt enim!
             </p>
           </div>
           <div className="intro-image">
-            <img src="/images/55.avif" alt="Intro" />
+            <img src={aks1} alt="Intro" />
           </div>
         </div>
       </div>
@@ -35,11 +34,11 @@ export default function Home() {
       <div className="home-courses">
         <h1>لیست دوره‌ها</h1>
         <div className="courses-grid">
-     {courses.map(course=>{
-        return <div className="col" key={course.id}>
-            <Card {...course}></Card>
-        </div>
-     })}
+          {courses.map(course => (
+            <div className="col" key={course.id}>
+              <Card {...course}></Card>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import aks2 from '../images/22.png'
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
 
         <div className="about-content">
           <div className="about-image">
-            <img src="/images/22.png" alt="Team" />
+            <img src={aks2} alt="Team" />
           </div>
           <div className="about-text">
             <h2>الهه عبدی - موسس وبسایت</h2>

@@ -8,18 +8,23 @@ export default function Course() {
     const [courseData, setCourseData] = useState(null);
 
     useEffect(() => {
-        axios.get(`https://68a078926e38a02c5818cd15.mockapi.io/courseData/${id}`)
+        axios.get(`https://68a1e6ee6f8c17b8f5db0df3.mockapi.io/courseData/${id}`)
             .then(res => setCourseData(res.data))
             .catch(err => console.log(err));
     }, [id]);
 
     if (!courseData) return <p>در حال بارگذاری دوره...</p>;
 
+    // بررسی اینکه آیا مسیر تصویر URL است یا مسیر local
+    const imageSrc = courseData.img.startsWith('http')
+        ? courseData.img
+        : process.env.PUBLIC_URL + courseData.img;
+
     return (
         <div className="course-page">
             <div className="course-container">
                 <div className="course-image">
-                    <img src={courseData.img} alt={courseData.title} />
+                    <img src={imageSrc} alt={courseData.title} />
                 </div>
                 <div className="course-info">
                     <h1>{courseData.title}</h1>

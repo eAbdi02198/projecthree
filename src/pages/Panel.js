@@ -1,41 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Panel.css';
+import axios from 'axios';
 
 export default function Panel() {
-  const panels = [
-    {
-      id: 1,
-      title: "دوره ری‌اکت",
-      text: "یادگیری ری‌اکت از صفر تا صد با الهه عبدی.",
-      src:"/images/react-cover-500x286.jpg"
-    },
-    {
-      id: 2,
-      title: "دوره بوت‌استرپ",
-      text: "طراحی سایت واکنش‌گرا و زیبا با Bootstrap.",
-      src:"/images/bootstrap-500x286.png"
-    },
-    {
-      id: 3,
-      title: "دوره جاوااسکریپت",
-      text: "تمرین و پروژه‌های عملی جاوااسکریپت.",
-      src:"/images/js.jpg"
-    }
-  ];
+  const [paneldata, setPaneldata] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://68a1e6ee6f8c17b8f5db0df3.mockapi.io/courseData")
+      .then((res) => {
+        setPaneldata(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <div className="panel-long-container">
-      {panels.map(panel => (
-        <div className="panel-long-card" key={panel.id}>
-          <div className="panel-long-img-placeholder">
-            <img src={panel.src} alt={panel.title} className='panel-img'/>
+      <h2 className="panel-title">لیست دوره‌ها</h2>
+      <div className="courses-container">
+        {paneldata.map((course) => (
+          <div className="course-card" key={course.id}>
+            <img src={course.img} alt={course.title} className="course-img" />
+            <h3 className="course-title">{course.title}</h3>
+            <p className="course-teacher">مدرس: {course.teacher}</p>
+            <p className="course-price">{course.price} هزار تومان</p>
+            <button className="course-btn">مشاهده جزئیات</button>
           </div>
-          <div className="panel-long-text">
-            <h3>{panel.title}</h3>
-            <p>{panel.text}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

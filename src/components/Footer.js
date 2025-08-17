@@ -22,9 +22,9 @@ export default function Footer() {
         <div className="footer-section">
           <h3>ما را دنبال کنید</h3>
           <div className="social-icons">
-            <a href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="/images/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="/images/twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="../images/face-book.png" alt="Facebook" /></a>
+            <a href="#"><img src="../images/اینساگرام.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="../images/توییتر.webp" alt="Twitter" /></a>
           </div>
         </div>
       </div>
