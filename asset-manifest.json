@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/projecthree/static/css/main.97970cbf.css",
-    "main.js": "/projecthree/static/js/main.8e1b59f6.js",
+    "main.css": "/projecthree/static/css/main.824cc5d2.css",
+    "main.js": "/projecthree/static/js/main.e119fcd9.js",
+    "static/media/22.png": "/projecthree/static/media/22.7cbf739bf4c1ea0b9baa.png",
+    "static/media/55.avif": "/projecthree/static/media/55.9da9c90b576cdbb0846d.avif",
     "index.html": "/projecthree/index.html",
-    "main.97970cbf.css.map": "/projecthree/static/css/main.97970cbf.css.map",
-    "main.8e1b59f6.js.map": "/projecthree/static/js/main.8e1b59f6.js.map"
+    "main.824cc5d2.css.map": "/projecthree/static/css/main.824cc5d2.css.map",
+    "main.e119fcd9.js.map": "/projecthree/static/js/main.e119fcd9.js.map"
   },
   "entrypoints": [
-    "static/css/main.97970cbf.css",
-    "static/js/main.8e1b59f6.js"
+    "static/css/main.824cc5d2.css",
+    "static/js/main.e119fcd9.js"
   ]
 }
