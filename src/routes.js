@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Login from "./pages/Login";
+
 import Article from "./pages/Article";
 import Panel from "./pages/Panel";
 import Course from "./pages/Course"; // 👈 کامپوننت دوره
