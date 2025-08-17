@@ -1,0 +1,46 @@
+/* Article.css */
+
+.article-page {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-articles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* برای موبایل */
+  }
+  
+  .my-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .my-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .article-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* لینک فعال با رنگ متفاوت */
+  .my-link.active {
+    background-color: #28a745;
+  }
+  

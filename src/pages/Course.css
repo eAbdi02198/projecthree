@@ -1,0 +1,41 @@
+/* Course.css */
+.course-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh; /* کل ارتفاع صفحه */
+    padding: 20px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 0 auto; /* وسط صفحه */
+    flex: 1; /* برای پر کردن فضای عمودی */
+}
+
+.course-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.course-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.course-info h1 {
+    margin-bottom: 15px;
+}
+
+.course-info p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
